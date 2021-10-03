@@ -1,0 +1,164 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #060606;
+}
+.try {
+  color: #00FFC2;
+ font-size: 5rem;
+ text-shadow: #1d90b3 1px 1px 4px;
+}
+.line-horizontal {
+  position: absolute;
+  height:1px ;
+  width: 100vw;
+  background-color: #2c2c2c;
+}
+.line-horizontal:nth-of-type(1) {
+  top: 15%;
+}
+.line-horizontal:nth-child(2) {
+  top: 35%;
+}
+.line-horizontal:nth-child(3) {
+  top: 65%;
+  clip-path: circle(75px at var(--x) var(--y));
+
+}
+
+.horizontal-lines {
+  height: 100vh;
+  clip-path: circle(75px at var(--x) var(--y));
+
+  
+}
+.line-vertical {
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 100vh;
+  background-color: #2c2c2c;
+  clip-path: circle(75px at var(--x) var(--y));
+
+}
+
+.line-vertical:nth-child(1) {
+  left: 4.5vw;
+}
+.line-vertical:nth-child(2) {
+  left: 21vw;
+}
+.line-vertical:nth-child(3) {
+  left: 39vw;
+}
+.line-vertical:nth-child(4) {
+  right: 43vw;
+}
+.line-vertical:nth-child(5) {
+  right: 25vw;
+}
+.line-vertical:nth-child(6) {
+  right: 20vw;
+}
+
+
+.line-vertical:nth-child(7) {
+  right: 4.5vw;
+}
+.vertical-lines {
+  width: 100vw;
+}
+
+.projects {
+  background-color: red;
+  height: 100vh;
+}
+
+
+
+.blue {
+  background-color:  #00FFC2;
+  box-shadow: 1px 1px #00FFC2;
+  z-index: -1;
+  clip-path: circle(10.16667vw at var(--x) var(--y));
+
+} */
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+  color: white;
+}
+.lines-wrap {
+  height: 200px;
+}
+
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.lines .horizontal, .lines .vertical {
+  background-color: rgb(44, 44, 44);
+  position: absolute;
+
+}
+
+.horizontal {
+  height: 1px;
+  width: 100vw;
+}
+.vertical {
+  height: 100vh;
+  width: 1px;  
+}
+.lines.blue {
+  z-index: 2;
+  clip-path: circle(6rem at var(--x) var(--y));
+
+}
+.lines.blue .horizontal, .lines.blue .vertical {
+  background-color: rgb(0, 162, 255);
+}
+
+.horizontal:nth-child(1) {
+  top: 20vh;
+}
+.horizontal:nth-child(2) {
+  top: 40vh;
+}
+.horizontal:nth-child(3) {
+  top: 75vh;
+}
+
+
+.vertical:nth-child(1) {
+  left: 4.5vw;
+}
+.vertical:nth-child(2) {
+  left: 15vw;
+}
+.vertical:nth-child(3) {
+  left: 35vw;
+}
+.vertical:nth-child(4) {
+  right: 45vw;
+}
+.vertical:nth-child(5) {
+  right: 35vw;
+}
+.vertical:nth-child(6) {
+  right: 15vw;
+}
+.vertical:nth-child(7) {
+  right: 4.5vw;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Lines</title>
+</head>
+<body>
+  <!-- Lines main color -->
+<div class="lines-wrap">
+  <div class="lines white">
+    <div class="horizontals">
+      <div class="horizontal"></div>
+      <div class="horizontal"></div>
+      <div class="horizontal"></div>
+    </div>
+    <div class="verticals">
+      <div class="vertical"></div>
+      <div class="vertical"></div>
+      <div class="vertical"></div>
+      <div class="vertical"></div>
+      <div class="vertical"></div>
+      <div class="vertical"></div>
+      <div class="vertical"></div>
+    </div>
+  </div>
+
+<!-- ChangeColor on hover -->
+  <div class="lines blue">
+    <div class="horizontals">
+      <div class="horizontal"></div>
+      <div class="horizontal"></div>
+      <div class="horizontal"></div>
+    </div>4
+    <div class="verticals">
+      <div class="vertical"></div>
+      <div class="vertical"></div>
+      <div class="vertical"></div>
+      <div class="vertical"></div>
+      <div class="vertical"></div>
+      <div class="vertical"></div>
+      <div class="vertical"></div>
+    </div>
+  </div>
+</div>
+  <div class="here" style="position: relative;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quas possimus quis aut minima cumque voluptatum dignissimos error. Accusamus odit ea dolorum reprehenderit natus delectus, cupiditate, necessitatibus deleniti eaque, rerum voluptate officiis iusto repellendus incidunt aperiam exercitationem fuga numquam ex nobis labore quas deserunt sint! Nobis excepturi odio labore voluptate!
+  </div>
+
+  <script type="text/javascript">
+    const pos = document.documentElement;
+    pos.addEventListener("mousemove", e =>{
+      pos.style.setProperty('--x', + e.clientX +"px")
+      pos.style.setProperty('--y', + e.clientY +"px")
+    })
+    </script>
+  <script src="./script.js"></script>
+</body>
+</html>
