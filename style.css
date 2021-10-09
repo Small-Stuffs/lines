@@ -94,11 +94,13 @@ body {
   margin: 0;
 }
 body {
+  position: fixed;
   background-color: black;
   color: white;
 }
 .lines-wrap {
-  height: 200px;
+  /* height: 200px; */
+  /* position: fixed; */
 }
 
 .lines {
@@ -110,9 +112,26 @@ body {
 .lines .horizontal, .lines .vertical {
   background-color: rgb(44, 44, 44);
   position: absolute;
+  /* box-shadow: rgb(31, 31, 31) 1px 1px; */
+
 
 }
 
+.text {
+  position: relative;
+  padding: 3rem;
+  z-index: 1000;
+  font-size: 5rem;
+}
+
+.background {
+  z-index: 100;
+  margin: 4rem;
+  /* padding: 5rem; */
+  height:70vh;
+  width: 70vw;
+  background-color: rgb(22, 22, 22);
+}
 .horizontal {
   height: 1px;
   width: 100vw;
@@ -123,24 +142,42 @@ body {
 }
 .lines.blue {
   z-index: 2;
-  clip-path: circle(6rem at var(--x) var(--y));
+  clip-path: circle(4rem at var(--x) var(--y));
 
 }
+.lines.blue .horizontal{
+  /* line-height: -1; */
+  /* height: 2px; */
+
+} 
 .lines.blue .horizontal, .lines.blue .vertical {
-  background-color: rgb(0, 162, 255);
+  background-color: rgb(70, 187, 255);
+  /* box-shadow: rgb(99, 252, 239)  1px 1px; */
 }
 
 .horizontal:nth-child(1) {
-  top: 20vh;
+  top: 10vh;
 }
+
 .horizontal:nth-child(2) {
-  top: 40vh;
+  top: 11vh;
 }
 .horizontal:nth-child(3) {
+  top: 50vh;
+}
+.horizontal:nth-child(4) {
   top: 75vh;
 }
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-
+}
+nav {
+  background-color: white;
+  height: 5rem;
+}
 .vertical:nth-child(1) {
   left: 4.5vw;
 }
@@ -157,8 +194,11 @@ body {
   right: 35vw;
 }
 .vertical:nth-child(6) {
-  right: 15vw;
+  right: 5vw;
 }
 .vertical:nth-child(7) {
   right: 4.5vw;
+}
+.vertical:nth-child(8) {
+  right: 4vw;
 }
